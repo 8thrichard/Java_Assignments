@@ -17,11 +17,20 @@ public class InvoiceApp {
 
         // initialize variables for use in calculating averages
         int invoiceCount = 0;
+        int  numLineItems = 0;
+
+
         double invoiceTotal = 0.0;
         double discountTotal = 0.0;
         double discountPercent = 0.0;
         double total = 0.0;
         double discountAmount = 0;
+        double subtotal = 0;
+
+        // perform invoice calculations until choice is "n" or "N"
+        String choice = "y";
+        String input = "?";
+
 
         // welcome the user to the program
         System.out.println("==========================================");
@@ -29,12 +38,17 @@ public class InvoiceApp {
         System.out.println("=========================================="); // print a blank line
 
         // perform invoice calculations until choice is "n" or "N"
-        String choice = "y";
+        choice = "y";
         while (!choice.equalsIgnoreCase("n")) {
             // get the invoice subtotal from the user
-            System.out.print("Enter subtotal:   ");
-            String input = sc.nextLine();
-            double subtotal = Double.parseDouble(input);
+            System.out.print("Please Enter the number of line items:   ");
+            numLineItems = sc.nextInt()
+            subtotal = Double.parseDouble(input);
+
+            for (int i = 0; i < numLineItems; i++) {
+                // Get Invoice number of line items
+            System.out.print("Please Enter the Line #:"+ i + i" line item price:   ");
+            subtotal += sc.nextDouble()
 
             // calculate the discount amount and total
             if (subtotal >= 500) {
@@ -46,8 +60,8 @@ public class InvoiceApp {
             } else {
                 discountPercent = 0.0;
             }
-            // double discountAmount = subtotal * discountPercent;
-            // double total = subtotal - discountAmount;
+            discountAmount = subtotal * discountPercent;
+            total = subtotal - discountAmount;
 
             // accumulate the invoice count and invoice total
             invoiceTotal = invoiceTotal + total;
