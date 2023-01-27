@@ -11,18 +11,22 @@ import java.util.Scanner;
 public class InvoiceApp {
 
     public static void main(String[] args) {
-        // welcome the user to the program
-        System.out.println("==========================================");
-        System.out.println("Welcome to the Invoice Total Calculator v2");
-        System.out.println("=========================================="); // print a blank line
 
         // create a Scanner object named sc
         Scanner sc = new Scanner(System.in);
 
         // initialize variables for use in calculating averages
+        int invoiceCount = 0;
         double invoiceTotal = 0.0;
         double discountTotal = 0.0;
-        int invoiceCount = 0;
+        double discountPercent = 0.0;
+        double total = 0.0;
+        double discountAmount = 0;
+
+        // welcome the user to the program
+        System.out.println("==========================================");
+        System.out.println("Welcome to the Invoice Total Calculator v2");
+        System.out.println("=========================================="); // print a blank line
 
         // perform invoice calculations until choice is "n" or "N"
         String choice = "y";
@@ -33,18 +37,17 @@ public class InvoiceApp {
             double subtotal = Double.parseDouble(input);
 
             // calculate the discount amount and total
-            double discountPercent;
             if (subtotal >= 500) {
-                discountPercent = .25;
+                discountPercent = 0.25;
             } else if (subtotal >= 200) {
-                discountPercent = .2;
+                discountPercent = 0.2;
             } else if (subtotal >= 100) {
-                discountPercent = .1;
+                discountPercent = 0.1;
             } else {
                 discountPercent = 0.0;
             }
-            double discountAmount = subtotal * discountPercent;
-            double total = subtotal - discountAmount;
+            // double discountAmount = subtotal * discountPercent;
+            // double total = subtotal - discountAmount;
 
             // accumulate the invoice count and invoice total
             invoiceTotal = invoiceTotal + total;
