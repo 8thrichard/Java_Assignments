@@ -42,13 +42,13 @@ public class InvoiceApp {
         while (!choice.equalsIgnoreCase("n")) {
             // get the invoice subtotal from the user
             System.out.print("Please Enter the number of line items:   ");
-            numLineItems = sc.nextInt()
+            numLineItems = sc.nextInt();
             subtotal = Double.parseDouble(input);
 
             for (int i = 0; i < numLineItems; i++) {
                 // Get Invoice number of line items
-            System.out.print("Please Enter the Line #:"+ i + i" line item price:   ");
-            subtotal += sc.nextDouble()
+            System.out.print("Please Enter the line item price:");
+            subtotal += sc.nextDouble();
 
             // calculate the discount amount and total
             if (subtotal >= 500) {
@@ -86,6 +86,7 @@ public class InvoiceApp {
                 + "Average discount:   " + discountTotal / invoiceCount + "\n";
         System.out.println(message);
     }
+}
 }
 
 // End of InvoiceApp
