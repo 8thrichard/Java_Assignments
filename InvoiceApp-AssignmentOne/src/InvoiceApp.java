@@ -1,4 +1,9 @@
-/* Programmer: Richard Boamah | Date: 01/21/2023 | */
+/*
+o	Description :   App that calculates invoice discounts
+o	Programmer’s name : Richard Boamah
+o	Date Written : 01/27/2023
+o	GitHub repository URL: https://github.com/8thrichard/Java_Assignments.git
+ */
 package InvoiceApp;
 
 import java.util.Scanner;
