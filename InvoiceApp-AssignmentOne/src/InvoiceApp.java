@@ -76,9 +76,9 @@ public class InvoiceApp {
 
             // see if the user wants to continue
             System.out.println("==========================================");
-            System.out.println("Continue? (Y/N): ");
-            System.out.println("==========================================");
+            System.out.print("Continue? (Y/N): ");
             choice = sc.nextLine();
+            System.out.println("==========================================");
             System.out.println("");
         }
         // calculate and display invoice count, average invoice, and average discount
