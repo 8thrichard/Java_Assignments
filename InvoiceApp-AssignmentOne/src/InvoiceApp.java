@@ -48,6 +48,7 @@ public class InvoiceApp {
                 System.out.print("Enter amount for line item " + (i + 1) + ": ");
                 subtotal += sc.nextDouble();
             }
+            System.out.println("=========================================="); // GUI Purposes
             // calculate the discount amount and total
             if (subtotal >= 500) {
                 discountPercent = 0.25;
@@ -71,6 +72,7 @@ public class InvoiceApp {
                     + "Discount amount:  " + discountAmount + "\n"
                     + "Invoice total:    " + total + "\n";
             System.out.println(message);
+            System.out.printf(""); // Formatting the output
 
             sc.nextLine(); // Clear the input buffer
 
@@ -86,6 +88,9 @@ public class InvoiceApp {
                 + "Average invoice:    " + invoiceTotal / invoiceCount + "\n"
                 + "Average discount:   " + discountTotal / invoiceCount + "\n";
         System.out.println(message);
+        System.out.printf("") ; // Formatting the output
+
+
         System.out.println("Thank You For Using the Invoice Total Calculator V2!");
 
     }
