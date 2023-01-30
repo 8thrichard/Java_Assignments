@@ -72,7 +72,7 @@ public class InvoiceApp {
                     + "Discount amount:  " + discountAmount + "\n"
                     + "Invoice total:    " + total + "\n";
             System.out.println(message);
-            System.out.printf(""); // Formatting the output
+            // System.out.printf(""); // Formatting the output
 
             sc.nextLine(); // Clear the input buffer
 
@@ -81,18 +81,17 @@ public class InvoiceApp {
             System.out.print("Continue? (Y/N): ");
             choice = sc.nextLine();
             System.out.println("==========================================");
-            System.out.println("");
+            // System.out.println(""); ########
         }
         // calculate and display invoice count, average invoice, and average discount
         String message = "Number of invoices: " + invoiceCount + "\n"
                 + "Average invoice:    " + invoiceTotal / invoiceCount + "\n"
                 + "Average discount:   " + discountTotal / invoiceCount + "\n";
         System.out.println(message);
-        System.out.printf("") ; // Formatting the output
-
+        // System.out.printf("") ; // Formatting the output
+        System.out.println("==========================================");
 
         System.out.println("Thank You For Using the Invoice Total Calculator V2!");
-
     }
 }
 
