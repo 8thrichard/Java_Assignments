@@ -83,8 +83,8 @@ public class InvoiceApp {
         String message = "Number of invoices: " + invoiceCount + "\n"
                 + "Average invoice:    " + invoiceTotal / invoiceCount + "\n"
                 + "Average discount:   " + discountTotal / invoiceCount + "\n";
-        System.out.println("Thank You!");
         System.out.println(message);
+        System.out.println("Thank You For Using the Invoice Total Calculator V2!");
 
     }
 }
