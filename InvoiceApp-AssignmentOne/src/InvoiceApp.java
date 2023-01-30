@@ -39,13 +39,13 @@ public class InvoiceApp {
         choice = "y";
         while (!choice.equalsIgnoreCase("n")) {
             // get the invoice subtotal from the user
-            System.out.print("Enter amount for line item " + (i + 1) + ": ");
+            System.out.print("Please Enter the number of line items:   ");
             numLineItems = sc.nextInt();
             subtotal = Double.parseDouble(input);
 
             for (int i = 0; i < numLineItems; i++) {
                 // Get Invoice number of line items
-                System.out.print("Please Enter the line item price:");
+                System.out.print("Enter amount for line item " + (i + 1) + ": ");
                 subtotal += sc.nextDouble();
 
                 // calculate the discount amount and total
@@ -71,6 +71,7 @@ public class InvoiceApp {
                         + "Discount amount:  " + discountAmount + "\n"
                         + "Invoice total:    " + total + "\n";
                 System.out.println(message);
+                
 
                 // see if the user wants to continue
                 System.out.print("Continue? (Y/N): ");
