@@ -40,6 +40,7 @@ public class InvoiceApp {
         while (!choice.equalsIgnoreCase("n")) {
             // get the invoice subtotal from the user
             System.out.print("Please Enter the number of line items:   ");
+            System.out.println("==========================================");
             numLineItems = sc.nextInt();
             subtotal = Double.parseDouble(input);
 
