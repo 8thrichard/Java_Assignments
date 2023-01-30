@@ -75,7 +75,9 @@ public class InvoiceApp {
             sc.nextLine(); // Clear the input buffer
 
             // see if the user wants to continue
-            System.out.print("Continue? (Y/N): ");
+            System.out.println("==========================================");
+            System.out.println("Continue? (Y/N): ");
+            System.out.println("==========================================");
             choice = sc.nextLine();
             System.out.println("");
         }
