@@ -68,14 +68,17 @@ public class InvoiceApp {
             invoiceCount = invoiceCount + 1;
 
             // display the discount amount and total
-            String message = "Discount percent: " + discountPercent + "\n"
-                    + "Discount amount:  " + discountAmount + "\n"
-                    + "Invoice total:    " + total + "\n";
-           // System.out.println(message);
-            System.out.printf("%20s: %,10.2f\n", subtotal);
-            System.out.printf("%20s: %,10.2f\n", discountPercent);
-            System.out.printf("%20s: %,10.2f\n", discountAmount);
-            System.out.printf("%20s: %,10.2f\n", invoiceTotal);
+           /*
+            * String message = "Discount percent: " + discountPercent + "\n"
+            * + "Discount amount:  " + discountAmount + "\n"
+            * + "Invoice total:    " + total + "\n";
+            */
+            
+           // Display Formatted Discount and Total
+            System.out.printf("Subtotal:    $%.2f\n", subtotal);
+            System.out.printf("Discount Percent:    %.2f\n", discountPercent);
+            System.out.printf("Discount Amount:    $%.2f\n", discountAmount);
+            System.out.printf("Invoice Total:    $%.2f\n", total);
 
             sc.nextLine(); // Clear the input buffer
 
