@@ -73,12 +73,12 @@ public class InvoiceApp {
             * + "Discount amount:  " + discountAmount + "\n"
             * + "Invoice total:    " + total + "\n";
             */
-            
+
            // Display Formatted Discount and Total
-            System.out.printf("Subtotal:    $%.2f\n", subtotal);
-            System.out.printf("Discount Percent:    %.2f\n", discountPercent);
-            System.out.printf("Discount Amount:    $%.2f\n", discountAmount);
-            System.out.printf("Invoice Total:    $%.2f\n", total);
+            System.out.printf("%20s:%,10.2f\n", "Subtotal", subtotal);
+            System.out.printf("%20s:%,10.2f\n", "Discount Percent:", discountPercent);
+            System.out.printf("%20s:%,10.2f\n","Discount Amount", discountAmount);
+            System.out.printf("%20s:%,10.2f\n", "Invoice Total", total);
 
             sc.nextLine(); // Clear the input buffer
 
@@ -89,14 +89,23 @@ public class InvoiceApp {
             System.out.println("==========================================");
             // System.out.println(""); ########
         }
+
         // calculate and display invoice count, average invoice, and average discount
-        String message = "Number of invoices: " + invoiceCount + "\n"
+        /* String message = "Number of invoices: " + invoiceCount + "\n"
                 + "Average invoice:    " + invoiceTotal / invoiceCount + "\n"
                 + "Average discount:   " + discountTotal / invoiceCount + "\n";
-        System.out.println(message);
+         System.out.println(message); */
+
+
+         // calculate and display Formatted invoice count, average invoice, and average discount
+         System.out.printf("%20s:%,10d\n", "Number of invoices", invoiceCount);
+        System.out.printf("%20s:%,10.2f\n" , "Average invoice", invoiceTotal / invoiceCount);
+        System.out.printf("%20s:%,10.2f\n" , "Average discount", discountTotal / invoiceCount);
+
+
         System.out.println("==========================================");
 
-        System.out.println("Thank You For Using the Invoice Total Calculator V2!");
+        System.out.println("   Thank You, I hope to see you Again!");
     }
 }
 
