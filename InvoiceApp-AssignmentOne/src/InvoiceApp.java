@@ -71,8 +71,11 @@ public class InvoiceApp {
             String message = "Discount percent: " + discountPercent + "\n"
                     + "Discount amount:  " + discountAmount + "\n"
                     + "Invoice total:    " + total + "\n";
-            System.out.println(message);
-            // System.out.printf(""); // Formatting the output
+           // System.out.println(message);
+            System.out.printf("%20s: %,10.2f\n", subtotal);
+            System.out.printf("%20s: %,10.2f\n", discountPercent);
+            System.out.printf("%20s: %,10.2f\n", discountAmount);
+            System.out.printf("%20s: %,10.2f\n", invoiceTotal);
 
             sc.nextLine(); // Clear the input buffer
 
@@ -88,7 +91,6 @@ public class InvoiceApp {
                 + "Average invoice:    " + invoiceTotal / invoiceCount + "\n"
                 + "Average discount:   " + discountTotal / invoiceCount + "\n";
         System.out.println(message);
-        // System.out.printf("") ; // Formatting the output
         System.out.println("==========================================");
 
         System.out.println("Thank You For Using the Invoice Total Calculator V2!");
