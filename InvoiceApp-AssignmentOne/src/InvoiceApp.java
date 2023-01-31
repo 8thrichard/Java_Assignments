@@ -1,7 +1,7 @@
 /*
 o	Description :   App that calculates invoice discounts
 o	Programmer’s name : Richard Boamah
-o	Date Written : 01/27/2023
+o	Date Written : 01/31/2023
 o	GitHub repository URL: https://github.com/8thrichard/Java_Assignments.git
  */
 // package InvoiceApp;
@@ -102,10 +102,10 @@ public class InvoiceApp {
         System.out.printf("%20s:%,10.2f\n" , "Average invoice", invoiceTotal / invoiceCount);
         System.out.printf("%20s:%,10.2f\n" , "Average discount", discountTotal / invoiceCount);
 
-
+        // Footer Message
         System.out.println("==========================================");
-
         System.out.println("   Thank You, I hope to see you Again!");
+        System.out.println("==========================================");
     }
 }
 
