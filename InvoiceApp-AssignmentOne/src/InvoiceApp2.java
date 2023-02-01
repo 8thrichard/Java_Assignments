@@ -1,14 +1,13 @@
 /*
-o	Description :   App that calculates invoice discounts
-o	Programmer’s name : Richard Boamah
-o	Date Written : 01/31/2023
-o	GitHub repository URL: https://github.com/8thrichard/Java_Assignments.git
+Description :   App that calculates invoice discounts
+Programmer’s name : Richard Boamah
+Date Written : 01/31/2023
+GitHub repository URL: https://github.com/8thrichard/Java_Assignments.git
  */
-// package InvoiceApp;
 
 import java.util.Scanner;
 
-public class InvoiceApp {
+public class InvoiceApp2 {
 
     public static void main(String[] args) {
 
