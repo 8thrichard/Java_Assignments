@@ -1,4 +1,4 @@
-public class App {
+public class BankApp {
     public static void main(String[] args) throws Exception {
             Account richardAccount = new Account();
             Account johnAccount = new Account(1000.10, "John", "Owen");
