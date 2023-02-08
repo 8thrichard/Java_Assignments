@@ -1,30 +1,36 @@
+// Class used to create Account objects
 public class Account {
+	
+	// this is a class level field - share across all accounts
+	public static int lastNumber = 0;
+	
+	// instance level fields - unique per account
+	// a field can also be called attribute or property
+	public int number;
+	public String firstName;
+	public String lastName;
+	public double balance;
+	
+	// default constructor that will return a unique account object 
+	public Account() {
+		System.out.println("Default constructor");
+		
+		this.number = ++Account.lastNumber;
+		this.balance = 0;
+		this.firstName = "Unknown";
+		this.lastName = "Unknown";
+	} // end of default
 
-// Class field - shared across all classes
-    private static int incoming Accounts = 0;
-// Every Object will have its own value
-    public int number;
-    public double balance;
-    public String firstName;
-    public String lastName;
-
-// Default Constructor
-    public Account() {
-        this.number = ++Account.incomingAccount;
-        this.balance = 0.0;
-        this.firstName = "Unknown";
-        this.lastName = "Unknown";
-
-    }
-
-    //Overload Constructor
-        public Account(double balance, String firstName, String lastName) {
-        this(); // Call the Default Constructor
-        this.balance = balance;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        }
-
-
-
-}
+	// overload constructor that allows setting the object's fields
+	public Account(String firstName, String lastName, double balance) {
+		this(); // call the default constructor
+		
+		// can not run this before calling default constructor
+		System.out.println("Overload constructor");
+		
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.balance = balance;
+	} // end of overload constructor
+	
+} // end of Account class
