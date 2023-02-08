@@ -28,5 +28,6 @@ public class BankApp {
 		System.out.println("Class level field lastNumber: " + Account.lastNumber);
 
 	} // end of main
+
 	
 } // end of BankApp class
