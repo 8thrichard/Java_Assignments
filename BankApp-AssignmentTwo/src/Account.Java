@@ -6,10 +6,10 @@ public class Account {
 	
 	// instance level fields - unique per account
 	// a field can also be called attribute or property
-	public int number;
-	public String firstName;
-	public String lastName;
-	public double balance;
+	private int number;
+	private String firstName;
+	private String lastName;
+	private double balance;
 	
 	// default constructor that will return a unique account object 
 	public Account() {
@@ -32,5 +32,67 @@ public class Account {
 		this.lastName = lastName;
 		this.balance = balance;
 	} // end of overload constructor
+
+	/** 
+	 * Allows getting the account number
+	 * @return the account number
+	 */
+
+	public int getNumber() {
+		return number;
+	}
+
+/**
+ * Allows getting the account owners name
+ * @return the account owner's name
+ */
+
+	public String getFirstName() {
+		return firstName;
+	}
+
+	/**
+	 * Allows changing the account owners first name if not blank
+	 * @param firstName the account owners first name
+	 */
+	public void setFirstName(String firstName) {
+		if (firstName == "")
+			System.out.println("First name cannot be empty");
+		else
+			this.firstName = firstName;
+	}
+
+	public String getLastName() {
+		if (lastName == "");
+			System.out.println("Last name can not be empty");
+		else
+			return lastName;
+	}
+
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+
+	/**
+	 * Allows getting the account balance
+	 * @return the account balance
+	 */
+	public double getBalance() {
+	
+		return balance;
+	}
+
+	/**
+	 * Allows depositing money into the account but only greater than zero
+	 * @param balance amount to desposit
+	 */
+
+	public void deposit(double amount) {\
+		if (amount <= 0)
+			System.out.println("Amount must be greater than zero, You deposited [" + amount +"]");
+		else
+			this.balance = balance;
+	}
+	
 	
 } // end of Account class
