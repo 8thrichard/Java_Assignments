@@ -21,13 +21,12 @@ public class InvoiceApp2 {
         double invoiceTotal = 0.0;
         double discountTotal = 0.0;
         double discountPercent = 0.0;
-        double total = 0.0;
+        double totalSum = 0.0;
         double discountAmount = 0;
         double subtotal = 0;
 
         // perform invoice calculations until choice is "n" or "N"
         String choice = "y";
-        String input = "?";
 
         // welcome the user to the program
         System.out.println("==========================================");
@@ -59,25 +58,17 @@ public class InvoiceApp2 {
                 discountPercent = 0.0;
             }
             discountAmount = subtotal * discountPercent;
-            total = subtotal - discountAmount;
+            totalSum = subtotal - discountAmount;
 
             // accumulate the invoice count and invoice total
-            invoiceTotal = invoiceTotal + total;
+            invoiceTotal = invoiceTotal + totalSum;
             discountTotal = discountTotal + discountAmount;
             invoiceCount = invoiceCount + 1;
-
-            // display the discount amount and total
-           /*
-            * String message = "Discount percent: " + discountPercent + "\n"
-            * + "Discount amount:  " + discountAmount + "\n"
-            * + "Invoice total:    " + total + "\n";
-            */
-
-           // Display Formatted Discount and Total
+            // Display Formatted Discount and Total
             System.out.printf("%20s:%,10.2f\n", "Subtotal", subtotal);
             System.out.printf("%20s:%,10.2f\n", "Discount Percent:", discountPercent);
-            System.out.printf("%20s:%,10.2f\n","Discount Amount", discountAmount);
-            System.out.printf("%20s:%,10.2f\n", "Invoice Total", total);
+            System.out.printf("%20s:%,10.2f\n", "Discount Amount", discountAmount);
+            System.out.printf("%20s:%,10.2f\n", "Invoice Total", totalSum);
 
             sc.nextLine(); // Clear the input buffer
 
@@ -89,17 +80,11 @@ public class InvoiceApp2 {
             // System.out.println(""); ########
         }
 
-        // calculate and display invoice count, average invoice, and average discount
-        /* String message = "Number of invoices: " + invoiceCount + "\n"
-                + "Average invoice:    " + invoiceTotal / invoiceCount + "\n"
-                + "Average discount:   " + discountTotal / invoiceCount + "\n";
-         System.out.println(message); */
-
-
-         // calculate and display Formatted invoice count, average invoice, and average discount
-         System.out.printf("%20s:%,10d\n", "Number of invoices", invoiceCount);
-        System.out.printf("%20s:%,10.2f\n" , "Average invoice", invoiceTotal / invoiceCount);
-        System.out.printf("%20s:%,10.2f\n" , "Average discount", discountTotal / invoiceCount);
+        // calculate and display Formatted invoice count, average invoice, and average
+        // discount
+        System.out.printf("%20s:%,10d\n", "Number of invoices", invoiceCount);
+        System.out.printf("%20s:%,10.2f\n", "Average invoice", invoiceTotal / invoiceCount);
+        System.out.printf("%20s:%,10.2f\n", "Average discount", discountTotal / invoiceCount);
 
         // Footer Message
         System.out.println("==========================================");
