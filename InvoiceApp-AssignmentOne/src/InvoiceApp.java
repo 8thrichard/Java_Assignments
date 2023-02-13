@@ -7,7 +7,7 @@ GitHub repository URL: https://github.com/8thrichard/Java_Assignments.git
 
 import java.util.Scanner;
 
-public class InvoiceApp2 {
+public class InvoiceApp {
 
     public static void main(String[] args) {
 
@@ -46,6 +46,7 @@ public class InvoiceApp2 {
                 System.out.print("Enter amount for line item " + (i + 1) + ": ");
                 subtotal += sc.nextDouble();
             }
+
             System.out.println("=========================================="); // GUI Purposes
             // calculate the discount amount and total
             if (subtotal >= 500) {
