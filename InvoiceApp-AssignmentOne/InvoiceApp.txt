@@ -1,0 +1,27 @@
+Output:
+==========================================
+Welcome to the Invoice Total Calculator V2
+==========================================
+Please Enter the number of line items:   2
+==========================================
+Enter amount for line item 1: 4400
+Enter amount for line item 2: 2312
+==========================================
+            Subtotal:  6,712.00
+   Discount Percent::      0.25
+     Discount Amount:  1,678.00
+       Invoice Total:  5,034.00
+==========================================
+Continue? (Y/N): N
+==========================================
+  Number of invoices:         1
+     Average invoice:  5,034.00
+    Average discount:  1,678.00
+==========================================
+   Thank You, I hope to see you Again!
+==========================================
+
+Reflection:
+The InvoiceApp assignment was eye-opening for me as a beginner. I realized that there is a lot of work to be done in order to become proficient in Java programming. Despite the difficulties, the experience was rewarding and educational. I'm looking forward to delving deeper into and mastering Java's complexities.
+
+
