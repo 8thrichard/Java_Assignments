@@ -16,7 +16,7 @@ public class Player {
         this.fieldGoals_3pt = 0;
     }
 
-    public Player(Srting name, int jersey) throws Exception {
+    public Player(String name, int jersey) throws Exception {
         this();
         this.name = name;
         this.jersey(jersey);
@@ -32,7 +32,8 @@ public class Player {
         return this.jersey;
     }
 
-    public setName(String Name) {
+    public setName(String name) {
+        this.name = name;
 
     }
 
@@ -48,7 +49,7 @@ public class Player {
         return this.fieldGoals_3pt;
     }
 
-    public void setjersey(int jersey) throws Exception {
+    public void setJersey(int jersey) throws Exception {
         if (jersey >= 0 && jersey <= 99)
             this.jersey = jersey;
         else
