@@ -30,7 +30,7 @@ public class BB_ScoreBoard_App {
     /**
      * Default constructor that instantiate both teams
      */
-    private BB_Stats_App() {
+    private BB_ScoreBoard_App() {
 
         homeTeam = new Team();
         awayTeam = new Team();
