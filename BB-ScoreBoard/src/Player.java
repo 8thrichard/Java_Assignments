@@ -18,8 +18,8 @@ public class Player {
 
     public Player(String name, int jersey) throws Exception {
         this();
-        this.name = name;
-        this.jersey(jersey);
+        this.setName(name);
+        this.setJersey(jersey);
 
     }
 
