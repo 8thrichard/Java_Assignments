@@ -37,7 +37,9 @@ public class Team {
             teamFouls += this.players.get(i).getFouls();
     }
 
-    return teamFouls;
+    public int getName() {
+        return this.name;
+    }
 
     public void displayDetailStats() {
 
@@ -58,5 +60,13 @@ public class Team {
     public void displayTeamStat() {
         System.out.println();
 
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public List<Player> getPlayers() {
+        return players;
     }
 }
