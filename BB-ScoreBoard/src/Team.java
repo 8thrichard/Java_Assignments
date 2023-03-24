@@ -1,19 +1,20 @@
 import java.util.ArrayList;
-import java.lang.String;
+import java.lang.List;
 
 public class Team {
     private String name;
-    private List players;
+    private List<Player> players;
 
     public Team() {
         this.name = "Unknown";
-        this.players = new ArrayList<>(players);
+        this.players = new ArrayList<Players>();
 
     }
 
-    public void addPlayer(String Name, int jersey) {
+    public void addPlayer(String Name, int jersey) throws Exception {
 
         Player dup = this.getPlayer(jersey);
+
         if (dup == null)
             this.players.add(new Player(name, jersey));
         else
