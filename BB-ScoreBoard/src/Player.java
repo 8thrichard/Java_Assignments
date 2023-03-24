@@ -2,7 +2,7 @@ public class Player {
 
     private String name;
     private String jersey;
-    private String fouls;
+    private String foul;
     private String fieldGoals_1pt;
     private String fieldGoals_2pt;
     private String fieldGoals_3pt;
@@ -10,7 +10,7 @@ public class Player {
     public Player() {
         this.name = "unknown";
         this.jersey = 0;
-        this.fouls = 0;
+        this.foul = 0;
         this.fieldGoals_1pt = 0;
         this.fieldGoals_2pt = 0;
         this.fieldGoals_3pt = 0;
