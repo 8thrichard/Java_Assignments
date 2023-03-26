@@ -1,11 +1,11 @@
 public class Player {
 
     private String name;
-    private String jersey;
-    private String foul;
-    private String fieldGoals_1pt;
-    private String fieldGoals_2pt;
-    private String fieldGoals_3pt;
+    private int jersey;
+    private int foul;
+    private int fieldGoals_1pt;
+    private int fieldGoals_2pt;
+    private int fieldGoals_3pt;
 
     public Player() {
         this.name = "unknown";
