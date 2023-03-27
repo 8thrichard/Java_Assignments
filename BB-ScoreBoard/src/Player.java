@@ -32,20 +32,20 @@ public class Player {
         return this.jersey;
     }
 
-    public setName(String name) {
+    public void setName(String name) {
         this.name = name;
 
     }
 
-    public String getFieldGoals_1pt() {
+    public int getFieldGoals_1pt() {
         return this.fieldGoals_1pt;
     }
 
-    public String getFieldGoals_2pt() {
+    public int getFieldGoals_2pt() {
         return this.fieldGoals_2pt;
     }
 
-    public String getFieldGoals_3pt() {
+    public int getFieldGoals_3pt() {
         return this.fieldGoals_3pt;
     }
 
