@@ -56,6 +56,10 @@ public class Player {
             throw new Exception("Invalid Jersey number. Must be Between 0-99");
     }
 
+    public void displayStats() {
+
+    }
+
     public boolean equals(Object object) {
         if (!(object instanceof Player))
             return false;
