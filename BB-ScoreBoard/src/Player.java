@@ -55,4 +55,17 @@ public class Player {
         else
             throw new Exception("Invalid Jersey number. Must be Between 0-99");
     }
+
+    public boolean equals(Object object) {
+        if (!(object instanceof Player))
+            return false;
+
+        Player other = (Player) object;
+        if (this.jersey == other.getJersey())
+            return true;
+        else
+            return false;
+
+    }
+
 }
