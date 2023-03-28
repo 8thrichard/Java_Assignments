@@ -25,7 +25,6 @@ public class Player {
     public String getName() {
         return this.name;
     }
-    
 
     public int getJersey() {
         return this.jersey;
@@ -58,7 +57,7 @@ public class Player {
             throw new Exception("Invalid Jersey number. Must be Between 0-99");
     }
 
-    public void foul(){
+    public void foul() {
         this.foul++;
     }
 
@@ -74,8 +73,9 @@ public class Player {
                 this.fieldGoals_3pt++;
                 break;
             default:
-                throw new Exception("Invalid shot type. Must be 1, 2, or 3."); }
+                throw new Exception("Invalid shot type. Must be 1, 2, or 3.");
         }
+    }
 
     public int getPoints() {
         int points = 0;
