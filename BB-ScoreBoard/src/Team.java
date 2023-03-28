@@ -7,23 +7,25 @@ public class Team {
 
     public Team() {
         this.name = "Unknown";
-        this.players = new ArrayList<Players>();
+        this.players = new ArrayList<Player>();
 
     }
 
-    public void addPlayer(String Name, int jersey) throws Exception {
 
+    public void addPlayer(String name, int jersey) throws Exception {
         Player dup = this.getPlayer(jersey);
 
-        if (dup == null)
+        if (dup == null) {
             this.players.add(new Player(name, jersey));
-        else
-            throw Exception("Jersey #" + jersey + "already assigned to" + dup.getName());
+        } else {
+            throw new Exception("Jersey #" + jersey + " already assigned to " + dup.getName());
+        }
     }
 
+
+ 
     public Player getPlayer(int jersey) throws Exception {
         int index = this.players.indexOf(new Player(jersey));
-
         if (index == -1)
             return null;
         else

@@ -20,7 +20,6 @@ public class Player {
         this();
         this.setName(name);
         this.setJersey(jersey);
-
     }
 
     public String getName() {
@@ -31,15 +30,13 @@ public class Player {
     public int getJersey() {
         return this.jersey;
     }
-    
 
     public int getFoul() {
-        return foul;
+        return this.foul;
     }
 
     public void setName(String name) {
         this.name = name;
-
     }
 
     public int getFieldGoals_1pt() {
@@ -61,14 +58,11 @@ public class Player {
             throw new Exception("Invalid Jersey number. Must be Between 0-99");
     }
 
-
     public void foul(){
         this.foul++;
-
     }
 
-
-    public void shot(int shotType) {
+    public void shot(int shotType) throws Exception {
         switch (shotType) {
             case 1:
                 this.fieldGoals_1pt++;
@@ -80,10 +74,8 @@ public class Player {
                 this.fieldGoals_3pt++;
                 break;
             default:
-                System.out.println("Invalid shot type. Must be 1, 2, or 3.");
+                throw new Exception("Invalid shot type. Must be 1, 2, or 3."); }
         }
-    }
-
 
     public int getPoints() {
         int points = 0;
@@ -94,10 +86,8 @@ public class Player {
     }
 
     public void displayStats() {
-        System.out.println("Jersey number: " + this.jersey);
-        System.out.println("Player name: " + this.name);
-        System.out.println("# of fouls: " + this.foul);
-        System.out.println("# of points: " + getPoints());
+        System.out.println("Jersey number: " + this.jersey + "\nPlayer name: " + this.name + "\n# of fouls: "
+                + this.foul + "\n# of points: " + getPoints());
     }
 
     public boolean equals(Object object) {
