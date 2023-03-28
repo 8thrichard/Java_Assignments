@@ -11,7 +11,6 @@ public class Team {
 
     }
 
-
     public void addPlayer(String name, int jersey) throws Exception {
         Player dup = this.getPlayer(jersey);
 
@@ -22,8 +21,6 @@ public class Team {
         }
     }
 
-
- 
     public Player getPlayer(int jersey) throws Exception {
         int index = this.players.indexOf(new Player(jersey));
         if (index == -1)
