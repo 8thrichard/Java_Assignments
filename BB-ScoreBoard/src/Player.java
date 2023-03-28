@@ -24,7 +24,6 @@ public class Player {
     }
 
     public String getName() {
-
         return this.name;
     }
     
@@ -32,6 +31,7 @@ public class Player {
     public int getJersey() {
         return this.jersey;
     }
+    
 
     public int getFoul() {
         return foul;
@@ -63,7 +63,25 @@ public class Player {
 
 
     public void foul(){
+        this.foul++;
 
+    }
+
+
+    public void shot(int shotType) {
+        switch (shotType) {
+            case 1:
+                this.fieldGoals_1pt++;
+                break;
+            case 2:
+                this.fieldGoals_2pt++;
+                break;
+            case 3:
+                this.fieldGoals_3pt++;
+                break;
+            default:
+                System.out.println("Invalid shot type. Must be 1, 2, or 3.");
+        }
     }
 
 
