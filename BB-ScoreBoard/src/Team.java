@@ -53,6 +53,17 @@ public class Team {
         String name = this.Players.get(i).getName();
         int jersey = this.Players.get(i).getJersey();
 
+
+        System.out.printf("%-10s %-15s %-5s %-5s %-5s%n", "Name", "Jersey Number", "Fouls", "1pt", "2pt", "3pt");
+
+        for (Player player : this.players) {
+            String name = player.getName();
+            int jersey = player.getJersey();
+            int fouls = player.getFouls();
+            int fg1pt = player.getFieldGoals_1pt();
+            int fg2pt = player.getFieldGoals_2pt();
+            int fg3pt = player.getFieldGoals_3pt();
+
         /* System.out.printf("%-2d %15s %5d, jersey, name, foul); */
         
         System.out.println(jersey + " " + name);
