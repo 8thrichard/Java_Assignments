@@ -27,9 +27,14 @@ public class Player {
 
         return this.name;
     }
+    
 
     public int getJersey() {
         return this.jersey;
+    }
+
+    public int getFoul() {
+        return foul;
     }
 
     public void setName(String name) {
@@ -56,8 +61,25 @@ public class Player {
             throw new Exception("Invalid Jersey number. Must be Between 0-99");
     }
 
-    public void displayStats() {
 
+    public void foul(){
+
+    }
+
+
+    public int getPoints() {
+        int points = 0;
+        points += this.fieldGoals_1pt;
+        points += this.fieldGoals_2pt * 2;
+        points += this.fieldGoals_3pt * 3;
+        return points;
+    }
+
+    public void displayStats() {
+        System.out.println("Jersey number: " + this.jersey);
+        System.out.println("Player name: " + this.name);
+        System.out.println("# of fouls: " + this.foul);
+        System.out.println("# of points: " + getPoints());
     }
 
     public boolean equals(Object object) {
