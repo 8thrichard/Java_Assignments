@@ -80,6 +80,10 @@ public class Team {
 			return this.players.get(index);
 	}
 
+	public void setName(String name) {
+		this.name = name;
+	}
+
 	/**
 	 * This method calculates the total team fouls.
 	 */
@@ -115,9 +119,5 @@ public class Team {
 	/**
 	 * this method is used to set the Teams' name
 	 */
-
-	public void setName(String name) {
-		this.name = name;
-	}
 
 }
