@@ -38,8 +38,8 @@ public class Team {
 	 * This method is used to display Team stats for both teams
 	 */
 	public void displayTeamStats() {
-		System.out.println("Team " + this.name + " Fouls =" + this.getTeamFouls());
-		System.out.println("Team " + this.name + " Points =" + this.getTeamPoints());
+		System.out.println(
+				"Team " + this.name + "'s" + " Fouls=" + this.getTeamFouls() + " Points=" + this.getTeamPoints());
 	}
 
 	/**
@@ -116,8 +116,4 @@ public class Team {
 		return this.name;
 	}
 
-
 }
-
-
-
