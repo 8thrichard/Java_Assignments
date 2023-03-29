@@ -136,3 +136,14 @@ Menu Choice: 0
 
 Team Cat's Fouls=0 Points=3
 Team Dog's Fouls=1 Points=0
+
+
+Reflection of this assignment;
+
+Through completing this assignment, I faced several challenges that were initially difficult to overcome. 
+However, the experience also taught me a valuable lesson: it's okay to ask for help. 
+I learned that seeking assistance is not a sign of weakness, but rather an opportunity for growth and improvement. 
+Moreover, I gained a deeper understanding of arrays, a crucial data structure in programming. 
+One of the most enjoyable aspects of the assignment was the opportunity to read through my professor's code, 
+which provided valuable insights into good coding practices and problem-solving strategies. 
+Overall, I am grateful for this assignment and the lessons it taught me about humility, perseverance, and the importance of seeking guidance when needed.
