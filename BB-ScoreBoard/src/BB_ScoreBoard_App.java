@@ -255,7 +255,7 @@ public class BB_ScoreBoard_App {
     } // end of playGame
 
     /**
-     * Main method that creates the BB_Stats_App object and then
+     * Main method that creates the BB_S_App object and then
      * setups up the teams and play the game via menu options.
      * 
      * @param args No command line input args are used for this application
@@ -263,7 +263,7 @@ public class BB_ScoreBoard_App {
      */
     public static void main(String[] args) throws Exception {
 
-        BB_Stats_App app = new BB_Stats_App();
+        BB_ScoreBoard_App app = new BB_ScoreBoard_App();
 
         app.displayAppHeading();
 

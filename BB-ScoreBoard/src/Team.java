@@ -38,8 +38,13 @@ public class Team {
 
     public int getTeamFouls() {
         int teamfouls = 0;
-        for (int i = 0; i < this.players.size(); i++)
+
+        for (int i = 0; i < this.players.size(); i++) {
             teamFouls += this.players.get(i).getFouls();
+        }
+
+        return teamfouls;
+
     }
 
     public String getName() {
