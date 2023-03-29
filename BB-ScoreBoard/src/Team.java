@@ -116,8 +116,8 @@ public class Team {
 		return this.name;
 	}
 
-	/**
-	 * this method is used to set the Teams' name
-	 */
 
 }
+
+
+
