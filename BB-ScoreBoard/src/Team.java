@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.lang.List;
 
 public class Team {
+
     private String name;
     private List<Player> players;
 
@@ -9,6 +10,11 @@ public class Team {
         this.name = "Unknown";
         this.players = new ArrayList<Player>();
 
+    }
+
+    public Team(String name) {
+        this();
+        this.setName(name);
     }
 
     public void addPlayer(String name, int jersey) throws Exception {
@@ -46,27 +52,23 @@ public class Team {
     }
 
     public void displayDetailStats() {
-
-        // this is the header shoud be, watch friday video
-
-        for (int i =0 ; i < this.players.size(); i++)
-        String name = this.Players.get(i).getName();
-        int jersey = this.Players.get(i).getJersey();
-
-
-        System.out.printf("%-10s %-15s %-5s %-5s %-5s%n", "Name", "Jersey Number", "Fouls", "1pt", "2pt", "3pt");
-
-        for (Player player : this.players) {
-            String name = player.getName();
-            int jersey = player.getJersey();
-            int fouls = player.getFouls();
-            int fg1pt = player.getFieldGoals_1pt();
-            int fg2pt = player.getFieldGoals_2pt();
-            int fg3pt = player.getFieldGoals_3pt();
-
-        /* System.out.printf("%-2d %15s %5d, jersey, name, foul); */
+        System.out.println("=================================================");
+        System.out.println("Jersey\tName\tFouls\t1pt\t2pt\t3pt\tTotal");
+        System.out.println("======\t======\t=====\t===\t===\t===\t=====");
         
-        System.out.println(jersey + " " + name);
+        for (int i = 0; i < this.players.size(); i++) {
+            String name = this.players.get(i).getName();
+            int jersey = this.players.get(i).getJersey();
+            int fouls = this.players.get(i).getFouls();
+            int fieldGoals_1pt = this.players.get(i).getfieldGoals_1pt();
+            int fieldGoals_2pt = this.players.get(i).getfieldGoals_2pt();
+            int fieldGoals_3pt = this.players.get(i).getfieldGoals_3pt();
+            int total = this.players.get(i).getPoints();
+            
+        
+            System.out.printf("%4d\t%7s\t%2d\t%2d\t%2d\t%2d\t%2d%n", jersey, name, fouls, 
+            fieldGoals_1pt, fieldGoals_2pt, fieldGoals_3pt, total); 
+        }
 
     }
 
@@ -76,22 +78,6 @@ public class Team {
         int totalFouls = getTeamFouls();
         int totalPoints = getTeamPoints();
         System.out.println("Team " + this.name + " Fouls=" + totalFouls + " Points=" + totalPoints);
-    }
-
-    public void displayDetailStats() {
-        // Header
-        System.out.printf("%-10s %-15s %-5s %-5s %-5s%n", "Name", "Jersey Number", "Fouls", "1pt", "2pt", "3pt");
-
-        for (Player player : this.players) {
-            String name = player.getName();
-            int jersey = player.getJersey();
-            int fouls = player.getFouls();
-            int fg1pt = player.getFieldGoals_1pt();
-            int fg2pt = player.getFieldGoals_2pt();
-            int fg3pt = player.getFieldGoals_3pt();
-
-            System.out.printf("%-10s %-15s %-5d %-5d %-5d %-5d%n", name, jersey, fouls, fg1pt, fg2pt, fg3pt);
-        }
     }
 
     public List<Player> getPlayers() {
