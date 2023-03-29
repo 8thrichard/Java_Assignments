@@ -55,7 +55,7 @@ public class Team {
         System.out.println("=================================================");
         System.out.println("Jersey\tName\tFouls\t1pt\t2pt\t3pt\tTotal");
         System.out.println("======\t======\t=====\t===\t===\t===\t=====");
-        
+
         for (int i = 0; i < this.players.size(); i++) {
             String name = this.players.get(i).getName();
             int jersey = this.players.get(i).getJersey();
@@ -64,10 +64,9 @@ public class Team {
             int fieldGoals_2pt = this.players.get(i).getfieldGoals_2pt();
             int fieldGoals_3pt = this.players.get(i).getfieldGoals_3pt();
             int total = this.players.get(i).getPoints();
-            
-        
-            System.out.printf("%4d\t%7s\t%2d\t%2d\t%2d\t%2d\t%2d%n", jersey, name, fouls, 
-            fieldGoals_1pt, fieldGoals_2pt, fieldGoals_3pt, total); 
+
+            System.out.printf("%4d\t%7s\t%2d\t%2d\t%2d\t%2d\t%2d%n", jersey, name, fouls,
+                    fieldGoals_1pt, fieldGoals_2pt, fieldGoals_3pt, total);
         }
 
     }
