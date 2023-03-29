@@ -17,9 +17,9 @@ public class Team {
 	/**
 	 * Overload constructor
 	 */
-	public Team (String name) {
+	public Team(String name) {
 		this();
-		this.setName(name); 
+		this.setName(name);
 	}
 
 	/**
@@ -29,16 +29,16 @@ public class Team {
 		Player dup = this.getPlayer(jersey);
 
 		if (dup == null)
-			this.players.add(new Player(name,jersey));
+			this.players.add(new Player(name, jersey));
 		else
-			throw new Exception("Jersey" + jersey + "alread assigned to" + dup.getName());
+			throw new Exception("Jersey " + jersey + " has been assigned to " + dup.getName());
 	}
 
 	/**
 	 * This method is used to display Team stats for both teams
 	 */
 	public void displayTeamStats() {
-		System.out.println("Team " + this.name + "Fouls =" + this.getTeamFouls());    
+		System.out.println("Team " + this.name + "Fouls =" + this.getTeamFouls());
 		System.out.println("Team " + this.name + "Points =" + this.getTeamPoints());
 	}
 
@@ -74,7 +74,7 @@ public class Team {
 
 		int index = this.players.indexOf(new Player(jersey));
 
-		if(index == -1)
+		if (index == -1)
 			return null;
 		else
 			return this.players.get(index);
@@ -83,7 +83,6 @@ public class Team {
 	/**
 	 * This method calculates the total team fouls.
 	 */
-
 
 	public int getTeamFouls() {
 		int totalFouls = 0;
@@ -119,6 +118,6 @@ public class Team {
 
 	public void setName(String name) {
 		this.name = name;
-}
+	}
 
 }
