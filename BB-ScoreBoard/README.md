@@ -10,7 +10,7 @@ The code provided is a Java application that simulates a basketball scoreboard. 
 
 This assignment was coded in both Eclipse and Visual Studio.
 
-## Contribution
+## Contributions
 
 1. Debbie Johnson - Professor
 2. Richard Boamah
