@@ -7,6 +7,7 @@ public class Player {
     private int fieldGoals_2pt;
     private int fieldGoals_3pt;
 
+    // Default Constructor
     public Player() {
         this.name = "unknown";
         this.jersey = 0;
@@ -20,6 +21,15 @@ public class Player {
         this();
         this.setName(name);
         this.setJersey(jersey);
+    }
+
+    public Player(int jersey) throws Exception {
+        this();
+        try {
+            this.setJersey(jersey);
+        } catch (Exception e) {
+            throw e;
+        }
     }
 
     public String getName() {
