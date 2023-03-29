@@ -47,7 +47,7 @@ public class Team {
 	 * Different teams
 	 */
 	public void displayDetailStats() {
-		System.out.println("=================================================");
+		System.out.println("=====================================================");
 		System.out.println("Jersey\tName\tFouls\t1pt\t2pt\t3pt\tTotal");
 		System.out.println("======\t======\t=====\t===\t===\t===\t=====");
 

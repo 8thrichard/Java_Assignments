@@ -1,0 +1,138 @@
+Console Output;
+=========================================
+Welcome to the BB Scoreboard App
+=========================================
+
+Enter the HOME Team name: Cat
+
+Enter Cat player's name or 'q' to quit: Kitty
+Enter Kitty jersey number: 10
+
+Enter Cat player's name or 'q' to quit: Tabby
+Enter Tabby jersey number: 10
+Jersey 10 has been assigned to Kitty!!
+Unable to add player!
+
+Enter Cat player's name or 'q' to quit: Tabby
+Enter Tabby jersey number: 20
+
+Enter Cat player's name or 'q' to quit: q
+
+-----------------------------------------
+
+Enter the AWAY TEAM name: Dog
+
+Enter Dog player's name or 'q' to quit: Doug
+Enter Doug jersey number: 11
+
+Enter Dog player's name or 'q' to quit: Frank
+Enter Frank jersey number: 22
+
+Enter Dog player's name or 'q' to quit: q
+
+=========================================
+Game Started!
+=========================================
+
+-----------------------------------------
+Main Menu
+-----------------------------------------
+0 = End Game
+1 = Enter Cat Team's Stats
+2 = Enter Dog Team's Stats
+3 = Display Game Stats
+-----------------------------------------
+Menu Choice: 1
+-----------------------------------------
+
+Enter Cat's Jersey # 10
+
+-----------------------------------------
+Enter #10 Kitty Stats
+-----------------------------------------
+0 = foul
+1 = free throw
+2 = 2pt field goal
+3 = 3pt field goal
+-----------------------------------------
+Enter Stat Type: 3
+-----------------------------------------
+Jersey number: 10
+Player name: Kitty
+# of fouls: 0
+# of points: 3
+
+-----------------------------------------
+
+Team Cat's Fouls=0 Points=3
+Team Dog's Fouls=0 Points=0
+
+-----------------------------------------
+Main Menu
+-----------------------------------------
+0 = End Game
+1 = Enter Cat Team's Stats
+2 = Enter Dog Team's Stats
+3 = Display Game Stats
+-----------------------------------------
+Menu Choice: 2
+-----------------------------------------
+
+Enter Dog's Jersey # 33
+Invalid #, please try again!
+Enter Dog's Jersey # 11
+
+-----------------------------------------
+Enter #11 Doug Stats
+-----------------------------------------
+0 = foul
+1 = free throw
+2 = 2pt field goal
+3 = 3pt field goal
+-----------------------------------------
+Enter Stat Type: 0
+-----------------------------------------
+Jersey number: 11
+Player name: Doug
+# of fouls: 1
+# of points: 0
+
+-----------------------------------------
+
+Team Cat's Fouls=0 Points=3
+Team Dog's Fouls=1 Points=0
+
+-----------------------------------------
+Main Menu
+-----------------------------------------
+0 = End Game
+1 = Enter Cat Team's Stats
+2 = Enter Dog Team's Stats
+3 = Display Game Stats
+-----------------------------------------
+Menu Choice: 3
+-----------------------------------------
+
+=====================================================
+Jersey  Name    Fouls   1pt     2pt     3pt     Total
+======  ======  =====   ===     ===     ===     =====
+  10      Kitty  0       0       0       1       3
+  20      Tabby  0       0       0       0       0
+=====================================================
+Jersey  Name    Fouls   1pt     2pt     3pt     Total
+======  ======  =====   ===     ===     ===     =====
+  11       Doug  1       0       0       0       0
+  22      Frank  0       0       0       0       0
+-----------------------------------------
+Main Menu
+-----------------------------------------
+0 = End Game
+1 = Enter Cat Team's Stats
+2 = Enter Dog Team's Stats
+3 = Display Game Stats
+-----------------------------------------
+Menu Choice: 0
+-----------------------------------------
+
+Team Cat's Fouls=0 Points=3
+Team Dog's Fouls=1 Points=0
