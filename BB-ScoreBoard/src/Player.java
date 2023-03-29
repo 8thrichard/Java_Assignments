@@ -8,9 +8,6 @@ public class Player {
 	private int fieldGoals_2pt;
 	private int fieldGoals_3pt;
 
-	/**
-	 * 
-	 */
 	public Player() {
 		this.name = "unknown";
 		this.jersey = 0;
@@ -35,6 +32,9 @@ public class Player {
 		}
 	}
 
+	/**
+	 * Get the Player's name.
+	 */
 	public String getName() {
 		return this.name;
 	}
@@ -159,5 +159,5 @@ public class Player {
 			return false;
 
 	}
-
+	// End of Player
 }
