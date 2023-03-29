@@ -31,15 +31,15 @@ public class Team {
 		if (dup == null)
 			this.players.add(new Player(name, jersey));
 		else
-			throw new Exception("Jersey " + jersey + " has been assigned to " + dup.getName());
+			throw new Exception("Jersey " + jersey + " has been assigned to " + dup.getName() + "!!");
 	}
 
 	/**
 	 * This method is used to display Team stats for both teams
 	 */
 	public void displayTeamStats() {
-		System.out.println("Team " + this.name + "Fouls =" + this.getTeamFouls());
-		System.out.println("Team " + this.name + "Points =" + this.getTeamPoints());
+		System.out.println("Team " + this.name + " Fouls =" + this.getTeamFouls());
+		System.out.println("Team " + this.name + " Points =" + this.getTeamPoints());
 	}
 
 	/**
