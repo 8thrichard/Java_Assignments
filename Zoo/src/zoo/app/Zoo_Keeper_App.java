@@ -1,3 +1,6 @@
+/**
+ * Githubs: https://github.com/8thrichard/Java_Assignments.git
+ */
 package zoo.app;
 
 import java.time.LocalDate;
@@ -20,6 +23,9 @@ public class Zoo_Keeper_App {
 	}
 
 	public static void main(String[] args) throws Exception {
+		System.out.println("+++++++++++++++++++++++");
+		System.out.println("Welcome to the Zoo App");
+		System.out.println("+++++++++++++++++++++++");
 
 		try {
 		
@@ -173,6 +179,10 @@ public class Zoo_Keeper_App {
 			System.out.println(e.getMessage());
 
 		}
-	}
 
+		System.out.println("+++++++++++++++++++++++");
+		System.out.println("Thanks for your time");
+		System.out.println("+++++++++++++++++++++++");	
+	}
+	
 }
