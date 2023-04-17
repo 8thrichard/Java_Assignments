@@ -1,8 +1,17 @@
 import java.util.ArrayList;
 import java.util.List;
+/**
+ * Represents the Basketball Team
+ */
 
+
+/**
+ * 
+ * Creates a new team with no players and a default name.
+ * The default name is set to "Team".
+ */
 public class Team {
-
+	
 	private String name;
 	private List<Player> players;
 
