@@ -1,13 +1,47 @@
-
+//Github Repository URL: https://github.com/8thrichard/Java_Assignments.git
+/**
+ * This Class Represents a Player in a BasketBall Game
+ */
 public class Player {
 
+	/*
+	 * The Name of the Player
+	 */
 	private String name;
+
+	/*
+	 * The Jersey Number of the Player
+	 */
 	private int jersey;
+	
+	/**
+	 * The number of fouls the player has committed.
+	 */
 	private int foul;
+
+	/**
+	 * 
+	 * The number of field goals the player has scored worth 1 point.
+	 */
 	private int fieldGoals_1pt;
+	/**
+	 * 
+	 * The number of field goals the player has scored worth 2 points.
+	 */
 	private int fieldGoals_2pt;
+	/**
+	 * 
+	 * The number of field goals the player has scored worth 3 points.
+	 */
 	private int fieldGoals_3pt;
 
+
+	/**
+	 * 
+	 * Creates a new player with default values.
+	 * The name is set to "unknown", jersey number to 0, fouls to 0 and
+	 * field goals to 0 for all point values.
+	 */
 	public Player() {
 		this.name = "unknown";
 		this.jersey = 0;
@@ -17,12 +51,30 @@ public class Player {
 		this.fieldGoals_3pt = 0;
 	}
 
+	/**
+	 * 
+	 * Creates a new player with the given name and jersey number.
+	 * The player is initialized with default values for fouls and field goals.
+	 * 
+	 * @param name   the name of the player
+	 * @param jersey the jersey number of the player
+	 * @throws Exception if the jersey number is invalid
+	 */
 	public Player(String name, int jersey) throws Exception {
 		this();
 		this.setName(name);
 		this.setJersey(jersey);
 	}
 
+	/**
+	 * 
+	 * Creates a new player with the given jersey number.
+	 * The player is initialized with default values for name, fouls and field
+	 * goals.
+	 * 
+	 * @param jersey the jersey number of the player
+	 * @throws Exception if the jersey number is invalid
+	 */
 	public Player(int jersey) throws Exception {
 		this();
 		try {
