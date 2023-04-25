@@ -30,7 +30,7 @@ The calculator has a graphical user interface (GUI) with text fields, buttons, a
 ### Interface
 ![image](https://user-images.githubusercontent.com/118012295/234177926-6df639ca-317d-4884-9231-781ad930e453.png)
 
-### Usage
+### Authors
  * [Richard Boamah]([url](https://github.com/8thrichard))
  * [Debbie Johnson]([url](https://github.com/dejohns2))
 
