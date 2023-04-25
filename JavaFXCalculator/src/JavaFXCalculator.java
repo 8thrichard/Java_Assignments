@@ -26,6 +26,7 @@ import javafx.geometry.Pos;
  *@version 1.0
  *@since 2023-04-24
  *@author Richard Boamah
+ *Github URL; https://github.com/8thrichard/Java_Assignments.git
  */
 public class JavaFXCalculator extends Application {
 
