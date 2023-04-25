@@ -16,13 +16,8 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 
 /*
- *The JavaFXCalculator class is an implementation of a basic calculator using JavaFX.
- *The calculator can perform simple arithmetic operations, such as addition, subtraction,
- *multiplication, and division. It also has the ability to calculate square roots, powers,
- *and perform memory operations such as recall, addition, subtraction, and clear.
- *The class extends the JavaFX Application class and creates a graphical user interface (GUI) with
- *text fields, buttons, and labels. The EventHandler interface is implemented to handle button
- *click events.
+ * This class represents a simple calculator that can perform basic arithmetic operations 
+ * and store and recall values from memory.
  *@version 1.0
  *@since 2023-04-24
  *@author Richard Boamah
@@ -31,30 +26,33 @@ import javafx.geometry.Pos;
 public class JavaFXCalculator extends Application {
 
 	/*
-	 * Main fields are initialized here 
-	 * text memoryTextused to display text 
+	 *
+	 * The Text object used to display text in the calculator.
 	 */
 	private Text memoryText;
 
 	/*
-	 * this is used to store output based on user input into computer and later used in M+, M-, MR, and MC
+	 *
+	 * The value stored in memory for later recall.
 	 */
 	private double memory;
 
 	/*
-	 * TextField tfDisplay used to display textField
+	 *
+	 * The TextField object used to display the calculator's input/output.
 	 */
 	private TextField tfDisplay;    
 
 	/*
-	 * used to store and display all 24 buttons listed in the array below
+	 *
+	 * An array of Button objects representing the calculator's buttons.
 	 */
 	private Button[] btns;       
 
 	/*
-	 * this are the labels we expect to see on out calculator to be used
-	 * \u2190 this represents key pointing backwards as a sort of backspace key
-	 * \u221a this is the math square root uni-code 
+	 *
+	 * The labels to be displayed on each of the calculator's buttons.
+	 * Includes uni-code characters for backspace and square root.
 	 */
 	private String[] btnLabels = {  // Labels of 24 buttons
 			"7",  "8",  "9",  "+",
@@ -66,18 +64,21 @@ public class JavaFXCalculator extends Application {
 	};
 
 	/*
-	 * For computation
-	 * Result of computation
+	 *
+	 * The result of the most recent arithmetic operation.
 	 */
 	private double result = 0;      
-
+	
 	/*
-	 *  Input number as String
+	 *
+	 * The current input value as a String.
 	 */
 	private String inStr = "0";  // 
 
 	/*
-	 *  Previous operator: ' '(nothing), '+', '-', '*', '/', '='
+	 *
+	 * The most recent arithmetic operator used: '+', '-', '*', '/', '=', or ' ' (no
+	 * operator).
 	 */
 	private char lastOperator = ' ';
 
